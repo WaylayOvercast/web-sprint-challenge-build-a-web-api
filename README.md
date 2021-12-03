@@ -147,7 +147,30 @@ We have provided test data for all the resources.
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. The core features of Node.js and Express and why they are useful.
+  easily available packages via npm allow for us to import lots of code and save time consiquently.
+
+  node is used all over the world and has a strong community.
+
+  node.js is crossplatform compatible and uses one of the most common and well documented programming languages in the world, Javascript.
+
+  express allows us to easily setup middlewares for http requests. 
+
+  express also allows us to control routing and perform actions based on params in an easy to understand way.
+
+
+
 1. Understand and explain the use of Middleware.
+
+middleware in the case of how im currently using it...
+it takes the request from the endpoint almost right as the endpoint is hit, middleware then takes it to another file and seperation of concerns takes place. it can do anything it wants to the request... even stopping it from ever returning to the endpoint, many uses for such a tool.
+
 1. The basic principles of the REST architectural style.
+
+rest is stateless but responds to the front-end with what they will need for their state, this is a really good seperation of concerns in REST although you do not yourself have state you will transfer data integral to the front end, so for the most part REST is a protocol that organizes our job as back-end developers.
+
 1. Understand and explain the use of Express Routers.
+
+Routers allow us to create and control multiple different endpoints from one or more pages as we choose, with express it makes this process much easier. and of course because its routing we can store information in the URL. (dont get me started on middleware being taken as a second argument)
+
 1. Describe tooling used to manually test the correctness of an API.
+standard conditional checks are important but i believe a good library or two could help, using middleware you could definitly just make your own! haha
